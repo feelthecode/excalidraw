@@ -115,11 +115,11 @@ export const exportToSvg = async (
     <style>
       @font-face {
         font-family: "Virgil";
-        src: url("https://excalidraw.com/Virgil.woff2");
+        src: url("https://excalidraw.com/fonts/hand-drawn/Virgil.woff2");
       }
       @font-face {
         font-family: "Cascadia";
-        src: url("https://excalidraw.com/Cascadia.woff2");
+        src: url("https://excalidraw.com/fonts/code/Cascadia.woff2");
       }
     </style>
   </defs>
