@@ -1,13 +1,42 @@
 /* http://www.eaglefonts.com/fg-virgil-ttf-131249.htm */
 @font-face {
   font-family: "Virgil";
-  src: url("Virgil.woff2");
+  src: url("fonts/hand-drawn/Virgil.woff2");
   font-display: swap;
 }
 
 /* https://github.com/microsoft/cascadia-code */
 @font-face {
   font-family: "Cascadia";
-  src: url("Cascadia.woff2");
+  src: url("fonts/code/Cascadia.woff2");
+  font-display: swap;
+}
+
+/* https://fontiran.com/فونت-ایران-سنس-دست-نویس-iransansdn
+‫‪IRAN‬‬ ‫‪Sans-serif‬‬ ‫‪fonts‬‬ ‫‪are‬‬ ‫‪considered‬‬ ‫‪a‬‬ ‫‪proprietary‬‬ ‫‪software.‬‬ ‫‪To‬‬ ‫‪gain‬‬
+‫‪information‬‬ ‫‪about‬‬ ‫‪the‬‬ ‫‪laws‬‬ ‫‪regarding‬‬ ‫‪the‬‬ ‫‪use‬‬ ‫‪of‬‬ ‫‪these‬‬ ‫‪fonts,‬‬ ‫‪please‬‬
+‫‪visit‬‬ ‫‪www.fontiran.com‬‬
+‫‪---------------------------------------------------------------------‬‬
+‫‪This‬‬ ‫‪set‬‬ ‫‪of‬‬ ‫‪fonts‬‬ ‫‪are‬‬ ‫‪used‬‬ ‫‪in‬‬ ‫‪this‬‬ ‫‪project‬‬ ‫‪under‬‬ ‫‪the‬‬ ‫‪license:‬‬ feelthecode/excalidraw
+‫‪---------------------------------------------------------------------‬‬
+*/
+
+@font-face {
+  font-family: "IRANSansDN";
+  src: url("fonts/hand-drawn/IRANSansDN.woff2");
+  font-display: swap;
+}
+
+/* https://github.com/rastikerdar/vazir-code-font */
+@font-face {
+  font-family: "Vazir-Code-Hack";
+  src: url("fonts/code/Vazir-Code-Hack.woff2");
+  font-display: swap;
+}
+
+/* https://fontiran.com/فونت-ایران-یکان-iran-yekan */
+@font-face {
+  font-family: "Vazir";
+  src: url("fonts/normal/Vazir-Regular.woff2");
   font-display: swap;
 }

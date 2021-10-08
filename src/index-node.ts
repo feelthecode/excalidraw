@@ -54,8 +54,20 @@ const elements = [
   },
 ];
 
-registerFont("./public/Virgil.woff2", { family: "Virgil" });
-registerFont("./public/Cascadia.woff2", { family: "Cascadia" });
+registerFont("./public/fonts/hand-drawn/Virgil.woff2", { family: "Virgil" });
+registerFont("./public/fonts/code/Cascadia.woff2", { family: "Cascadia" });
+
+// international fonts
+// persian fonts
+registerFont("./public/fonts/hand-drawn/IRANSansDN.woff2", {
+  family: "IRANSansDN",
+});
+registerFont("./public/fonts/normal/Vazir-Regular.woff2", {
+  family: "Vazir",
+});
+registerFont("./public/fonts/code/Vazir-Code-Hack.woff2", {
+  family: "Vazir-Code-Hack",
+});
 
 const canvas = exportToCanvas(
   elements as any,
