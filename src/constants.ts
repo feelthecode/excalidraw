@@ -1,6 +1,6 @@
 import cssVariables from "./css/variables.module.scss";
 import { AppProps } from "./types";
-import { FontFamilyValues } from "./element/types";
+import { FontFamilyKeys, FontFamilyValues } from "./element/types";
 
 export const APP_NAME = "Excalidraw";
 
@@ -68,6 +68,19 @@ export const FONT_FAMILY = {
   Virgil: 1,
   Helvetica: 2,
   Cascadia: 3,
+};
+
+export const FONT_FAMILIES_INTERNATIONAL = {
+  handDrawn: ["IRANSansDN"],
+  normal: ["Vazir"],
+  code: ["Vazir-Code-Hack"],
+};
+export const fontFamilyToStyleMapper: {
+  [key in FontFamilyKeys]: keyof typeof FONT_FAMILIES_INTERNATIONAL;
+} = {
+  Cascadia: "code",
+  Helvetica: "normal",
+  Virgil: "handDrawn",
 };
 
 export const WINDOWS_EMOJI_FALLBACK_FONT = "Segoe UI Emoji";

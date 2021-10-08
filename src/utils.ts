@@ -2,10 +2,12 @@ import colors from "./colors";
 import {
   CURSOR_TYPE,
   DEFAULT_VERSION,
+  fontFamilyToStyleMapper,
+  FONT_FAMILIES_INTERNATIONAL,
   FONT_FAMILY,
   WINDOWS_EMOJI_FALLBACK_FONT,
 } from "./constants";
-import { FontFamilyValues, FontString } from "./element/types";
+import { FontFamilyKeys, FontFamilyValues, FontString } from "./element/types";
 import { Zoom } from "./types";
 import { unstable_batchedUpdates } from "react-dom";
 import { isDarwin } from "./keys";
@@ -68,6 +70,14 @@ export const isWritableElement = (
   (target instanceof HTMLInputElement &&
     (target.type === "text" || target.type === "number"));
 
+const getSameInternationalFonts = (fontFamily: FontFamilyKeys): string => {
+  const fonts = FONT_FAMILIES_INTERNATIONAL[
+    fontFamilyToStyleMapper[fontFamily]
+  ].join(",");
+
+  return fonts;
+};
+
 export const getFontFamilyString = ({
   fontFamily,
 }: {
@@ -75,7 +85,9 @@ export const getFontFamilyString = ({
 }) => {
   for (const [fontFamilyString, id] of Object.entries(FONT_FAMILY)) {
     if (id === fontFamily) {
-      return `${fontFamilyString}, ${WINDOWS_EMOJI_FALLBACK_FONT}`;
+      return `${fontFamilyString}, ${getSameInternationalFonts(
+        fontFamilyString as FontFamilyKeys,
+      )}, ${WINDOWS_EMOJI_FALLBACK_FONT}`;
     }
   }
   return WINDOWS_EMOJI_FALLBACK_FONT;
