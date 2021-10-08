@@ -32,6 +32,10 @@ Last but not least, we're thankful to these companies for offering their service
 
 [![Vercel](./.github/assets/vercel.svg)](https://vercel.com) [![Sentry](./.github/assets/sentry.svg)](https://sentry.io) [![Crowdin](./.github/assets/crowdin.svg)](https://crowdin.com)
 
+## ⚠️ Important Note
+
+This fork of [Excalidraw](https://github.com/excalidraw/excalidraw) contains a font `IRANSansDN` that is licensed under [feelthecode/excalidraw](https://github.com/feelthecode/excalidraw/). So for any use of this repository is required to purchase a license from the font manufacturer [FontIran.com](https://fontiran.com/).
+
 ## Documentation
 
 ### Shortcuts
